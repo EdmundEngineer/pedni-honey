@@ -20,6 +20,8 @@ import { WhatComponent } from './what/what.component';
 import { ListGroupsComponent } from './list-groups/list-groups.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { MapsComponent } from './maps/maps.component';
+import { ProfileComponent } from './profile/profile.component';
+import { NotificationComponent } from './notification/notification.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { MapsComponent } from './maps/maps.component';
     WhatComponent,
     ListGroupsComponent,
     CarouselComponent,
-    MapsComponent
+    MapsComponent,
+    ProfileComponent,
+    NotificationComponent
   ],
   imports: [
     BrowserModule,
