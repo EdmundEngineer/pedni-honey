@@ -22,6 +22,9 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { MapsComponent } from './maps/maps.component';
 import { ProfileComponent } from './profile/profile.component';
 import { NotificationComponent } from './notification/notification.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { UserAuthComponent } from './user-auth/user-auth.component';
+import { OrderHistoryComponent } from './order-history/order-history.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +45,10 @@ import { NotificationComponent } from './notification/notification.component';
     CarouselComponent,
     MapsComponent,
     ProfileComponent,
-    NotificationComponent
+    NotificationComponent,
+    PageNotFoundComponent,
+    UserAuthComponent,
+    OrderHistoryComponent
   ],
   imports: [
     BrowserModule,
