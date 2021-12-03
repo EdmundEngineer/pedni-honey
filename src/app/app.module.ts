@@ -25,6 +25,13 @@ import { NotificationComponent } from './notification/notification.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { UserAuthComponent } from './user-auth/user-auth.component';
 import { OrderHistoryComponent } from './order-history/order-history.component';
+import { PostProductComponent } from './post-product/post-product.component';
+import { PostInfluencerComponent } from './post-influencer/post-influencer.component';
+import { EditProductComponent } from './edit-product/edit-product.component';
+import { OrdersComponent } from './orders/orders.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { NewsComponent } from './news/news.component';
+import { RatingCardComponent } from './rating-card/rating-card.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +55,14 @@ import { OrderHistoryComponent } from './order-history/order-history.component';
     NotificationComponent,
     PageNotFoundComponent,
     UserAuthComponent,
-    OrderHistoryComponent
+    OrderHistoryComponent,
+    PostProductComponent,
+    PostInfluencerComponent,
+    EditProductComponent,
+    OrdersComponent,
+    GalleryComponent,
+    NewsComponent,
+    RatingCardComponent
   ],
   imports: [
     BrowserModule,
