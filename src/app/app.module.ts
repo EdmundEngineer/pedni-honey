@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -32,6 +32,7 @@ import { OrdersComponent } from './orders/orders.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { NewsComponent } from './news/news.component';
 import { RatingCardComponent } from './rating-card/rating-card.component';
+import { CtaComponent } from './cta/cta.component';
 
 @NgModule({
   declarations: [
@@ -62,9 +63,11 @@ import { RatingCardComponent } from './rating-card/rating-card.component';
     OrdersComponent,
     GalleryComponent,
     NewsComponent,
-    RatingCardComponent
+    RatingCardComponent,
+    CtaComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
