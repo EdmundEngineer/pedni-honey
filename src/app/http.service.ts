@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class HttpService {
-  baseUrl:string = "https://quick-garage-api.herokuapp.com/";
+baseUrl:string = "https://quick-garage-api.herokuapp.com/";
   constructor(private http :HttpClient,private router :Router) { }
   //headers
  
