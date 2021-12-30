@@ -3,7 +3,7 @@
 $border-radius-lg: 2rem;
 $border-radius-sm: 2rem;
 $border-radius-md: 2rem;
-$btn-border-radius:$border-radius-md;
+$btn-border-radius:10px;
 $border-radius: 2rem;
 //$card-border-radius:                $border-radius;
 //COLORS
@@ -16,7 +16,98 @@ $headings-font-style:         normal;
 $headings-font-weight:        800;
 $headings-line-height:        36px;
 $headings-color:              null;
+//TYPOGRAPHY BASELINE
+.baseline{
+         
+         margin-left: 11.11%;
+         right:19.79%;         
+         font-family: Raleway;
+         font-style: normal;
+         font-weight: 500;
+         font-size: 24px;
+         line-height: 38px;
+         
+         /* or 158% */
+         letter-spacing: 0.2px;
 
+}
+.headline{
+    margin-left: 11.11%;
+    right:19.79%;         
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 67px;
+    
+    /* or 158% */
+    letter-spacing: 0.2px;
+
+
+}
+.overline{
+  /* All About PEDNI HONEY */
+
+
+margin-left: 11.11%;
+font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 36px;
+display: inline;
+/* identical to box height, or 150% */
+letter-spacing: 0.1px;
+
+color: #000000;
+}
+//CARD
+.card{
+    width: 220px;
+    height: 362px;
+}
+.card-img-top{
+    width: 190px;
+    height: 189px;
+    object-fit: contain;
+}
+//CTA
+.cta{
+    /* box */
+width: 100%;
+height: 509px;
+left: 152px;
+
+
+background: #00FFDD;
+border-radius: 50px;
+}
+.cta_headline{
+    margin-left: 18.54%;
+    margin-top: 18.54%;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 57px;
+     
+    /* or 142% */
+    letter-spacing: 0.2px;
+}
+.cta_button{
+    width: 314px;
+    height: 70px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #F6F6F9;
+    
+
+
+}
 // Add SASS theme customizations here..
 // Required
 @import "../node_modules/bootstrap/scss/functions";
