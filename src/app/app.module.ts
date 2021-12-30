@@ -33,6 +33,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { NewsComponent } from './news/news.component';
 import { RatingCardComponent } from './rating-card/rating-card.component';
 import { CtaComponent } from './cta/cta.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { CtaComponent } from './cta/cta.component';
     GalleryComponent,
     NewsComponent,
     RatingCardComponent,
-    CtaComponent
+    CtaComponent,
+    NavigationComponent
   ],
   imports: [
     HttpClientModule,
