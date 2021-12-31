@@ -2,12 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { HttpService } from '../http.service';
 import {  FormGroup,FormControl } from '@angular/forms';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+
 @Component({
-  selector: 'app-services',
-  templateUrl: './services.component.html',
-  styleUrls: ['./services.component.scss']
+  selector: 'app-specific-product',
+  templateUrl: './specific-product.component.html',
+  styleUrls: ['./specific-product.component.scss']
 })
-export class ServicesComponent implements OnInit {
+export class SpecificProductComponent implements OnInit {
 
   endpoint1: string = "adminProducts/products";
   endpoint2: string = "";
@@ -80,4 +81,5 @@ export class ServicesComponent implements OnInit {
 
     );
   }
+
 }

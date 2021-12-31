@@ -1,15 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpService } from '../http.service';
-import {  FormGroup,FormControl } from '@angular/forms';
-import { Router, ActivatedRoute, ParamMap } from '@angular/router';
-@Component({
-  selector: 'app-services',
-  templateUrl: './services.component.html',
-  styleUrls: ['./services.component.scss']
-})
-export class ServicesComponent implements OnInit {
 
-  endpoint1: string = "adminProducts/products";
+@Component({
+  selector: 'app-search-orders',
+  templateUrl: './search-orders.component.html',
+  styleUrls: ['./search-orders.component.scss']
+})
+export class SearchOrdersComponent implements OnInit {
+
+  endpoint1: string = "customerOrders/orders";
   endpoint2: string = "";
   endpoint3: string = "";
   endpoint4: string = "";
@@ -80,4 +78,6 @@ export class ServicesComponent implements OnInit {
 
     );
   }
+
+
 }

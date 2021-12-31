@@ -3,11 +3,11 @@ import { HttpService } from '../http.service';
 import {  FormGroup,FormControl } from '@angular/forms';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 @Component({
-  selector: 'app-services',
-  templateUrl: './services.component.html',
-  styleUrls: ['./services.component.scss']
+  selector: 'app-search',
+  templateUrl: './search.component.html',
+  styleUrls: ['./search.component.scss']
 })
-export class ServicesComponent implements OnInit {
+export class SearchComponent implements OnInit {
 
   endpoint1: string = "adminProducts/products";
   endpoint2: string = "";
@@ -80,4 +80,5 @@ export class ServicesComponent implements OnInit {
 
     );
   }
+
 }

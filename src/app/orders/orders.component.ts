@@ -11,7 +11,7 @@ export class OrdersComponent implements OnInit {
   public lat:number = 0; 
   public lng:number = 0;
   zoom=16;
-  endpoint1: string = "";
+  endpoint1: string = "customerOrders/orders";
   endpoint2: string = "";
   endpoint3: string = "";
   endpoint4: string = "";

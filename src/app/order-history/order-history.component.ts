@@ -9,7 +9,7 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 })
 export class OrderHistoryComponent implements OnInit {
  
-  endpoint1: string = "";
+  endpoint1: string = "customerOrders/orders";
   endpoint2: string = "";
   endpoint3: string = "";
   endpoint4: string = "";

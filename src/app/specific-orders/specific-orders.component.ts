@@ -3,13 +3,14 @@ import { HttpService } from '../http.service';
 import {  FormGroup,FormControl } from '@angular/forms';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 @Component({
-  selector: 'app-services',
-  templateUrl: './services.component.html',
-  styleUrls: ['./services.component.scss']
+  selector: 'app-specific-orders',
+  templateUrl: './specific-orders.component.html',
+  styleUrls: ['./specific-orders.component.scss']
 })
-export class ServicesComponent implements OnInit {
+export class SpecificOrdersComponent implements OnInit {
 
-  endpoint1: string = "adminProducts/products";
+  
+  endpoint1: string = "customerOrders/orders";
   endpoint2: string = "";
   endpoint3: string = "";
   endpoint4: string = "";
@@ -80,4 +81,7 @@ export class ServicesComponent implements OnInit {
 
     );
   }
+
+
+
 }

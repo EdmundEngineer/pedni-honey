@@ -34,6 +34,10 @@ import { NewsComponent } from './news/news.component';
 import { RatingCardComponent } from './rating-card/rating-card.component';
 import { CtaComponent } from './cta/cta.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { SearchComponent } from './search/search.component';
+import { SpecificProductComponent } from './specific-product/specific-product.component';
+import { SearchOrdersComponent } from './search-orders/search-orders.component';
+import { SpecificOrdersComponent } from './specific-orders/specific-orders.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +70,11 @@ import { NavigationComponent } from './navigation/navigation.component';
     NewsComponent,
     RatingCardComponent,
     CtaComponent,
-    NavigationComponent
+    NavigationComponent,
+    SearchComponent,
+    SpecificProductComponent,
+    SearchOrdersComponent,
+    SpecificOrdersComponent
   ],
   imports: [
     HttpClientModule,
