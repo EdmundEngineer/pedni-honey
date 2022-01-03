@@ -38,6 +38,7 @@ import { SearchComponent } from './search/search.component';
 import { SpecificProductComponent } from './specific-product/specific-product.component';
 import { SearchOrdersComponent } from './search-orders/search-orders.component';
 import { SpecificOrdersComponent } from './specific-orders/specific-orders.component';
+import { SplashComponent } from './splash/splash.component';
 
 @NgModule({
   declarations: [
@@ -74,7 +75,8 @@ import { SpecificOrdersComponent } from './specific-orders/specific-orders.compo
     SearchComponent,
     SpecificProductComponent,
     SearchOrdersComponent,
-    SpecificOrdersComponent
+    SpecificOrdersComponent,
+    SplashComponent
   ],
   imports: [
     HttpClientModule,
