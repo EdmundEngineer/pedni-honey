@@ -1,15 +1,3 @@
-<div class="row" >
-  <div class="col-md-12" >
-   <form class="d-flex m-2 " [formGroup]="currentForm"  (ngSubmit)="onSubmit()">
-           <input class="form-control me-2" type="search"  formControlName="search" placeholder="Honey 1kg" aria-label="Search">
-           <button class="btn  btn-primary" [disabled]="!currentForm.valid"  type="submit">Search</button>
-         </form>
-         
-      
-  </div>
-  </div>
-
-  <h3 >Found {{total}} results.</h3>
 <div class="container">
     <div class="row">
         <div class="col-md-4"  *ngFor="let data of datas">

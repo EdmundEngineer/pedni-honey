@@ -12,7 +12,11 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ServicesComponent } from './services/services.component';
 import { WhyComponent } from './why/why.component';
 import { WhatComponent } from './what/what.component';
+import { ProductComponent } from './product/product.component';
+import { SearchComponent } from './search/search.component';
 const routes: Routes = [
+  {path: 'search', component: SearchComponent},
+  {path: 'product', component: ProductComponent},
   {path: 'user-auth', component: UserAuthComponent},
   {path: 'home', component: HomeComponent},
   {path: 'notification', component: NotificationComponent},

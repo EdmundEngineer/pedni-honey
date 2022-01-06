@@ -39,6 +39,9 @@ import { SpecificProductComponent } from './specific-product/specific-product.co
 import { SearchOrdersComponent } from './search-orders/search-orders.component';
 import { SpecificOrdersComponent } from './specific-orders/specific-orders.component';
 import { SplashComponent } from './splash/splash.component';
+import { LoginComponent } from './login/login.component';
+import { ProductComponent } from './product/product.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -76,7 +79,9 @@ import { SplashComponent } from './splash/splash.component';
     SpecificProductComponent,
     SearchOrdersComponent,
     SpecificOrdersComponent,
-    SplashComponent
+    SplashComponent,
+    LoginComponent,
+    ProductComponent
   ],
   imports: [
     HttpClientModule,
@@ -87,7 +92,9 @@ import { SplashComponent } from './splash/splash.component';
       // Register the ServiceWorker as soon as the app is stable
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
-    })
+    }),
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

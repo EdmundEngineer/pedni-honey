@@ -3,19 +3,18 @@ import { HttpService } from '../http.service';
 import {  FormGroup,FormControl } from '@angular/forms';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 @Component({
-  selector: 'app-search',
-  templateUrl: './search.component.html',
-  styleUrls: ['./search.component.scss']
+  selector: 'app-product',
+  templateUrl: './product.component.html',
+  styleUrls: ['./product.component.scss']
 })
-export class SearchComponent implements OnInit {
+export class ProductComponent implements OnInit {
 
-  endpoint1: string = "adminProducts/productsSearch/0701376319";
+  endpoint1: string = "adminProducts/products";
   endpoint2: string = "";
   endpoint3: string = "";
   endpoint4: string = "";
   specificId:string = "";
   public  datas:any;
-  public total = 0;
   postData:any =  {
     "data": {
       "": "",
@@ -28,15 +27,14 @@ export class SearchComponent implements OnInit {
       };  
   currentForm =new FormGroup({
         search: new FormControl('')
-     });  
-          
+     });        
   constructor(private mechanicService :HttpService,private router :Router,private route: ActivatedRoute) { }
 
   ngOnInit(): void {
       
    const problem_id :any = this.route.snapshot.paramMap.get('id');
    this.specificId = problem_id;
-   //this.searchSth();
+   this.read();
   }
   create(){
     this.mechanicService.postData(this.endpoint1,this.postData).subscribe(
@@ -50,6 +48,7 @@ export class SearchComponent implements OnInit {
   read(){
     this.mechanicService.getData(this.endpoint1).subscribe(
       (response: any) => {
+        this.datas = response;
         console.log(response);
          
       }
@@ -60,24 +59,10 @@ export class SearchComponent implements OnInit {
     this.mechanicService.getSpecificData(this.endpoint1,this.specificId).subscribe(
       (response: any) => {
         console.log(response);
-        
          
       }
 
     );
-  }
-  searchSth(){
-    this.mechanicService.searchSth(this.endpoint1).subscribe(
-      (response: any) => {
-        console.log(response);
-        this.datas = response;   
-        this.total = response.length;      
-         
-      }
-
-    );
-  
-     
   }
   update(){
     this.mechanicService.updateData(this.endpoint1,this.updateData).subscribe(
@@ -96,9 +81,6 @@ export class SearchComponent implements OnInit {
       }
 
     );
-  }
-  onSubmit(){
-    this.searchSth();
   }
 
 }

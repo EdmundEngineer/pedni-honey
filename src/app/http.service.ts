@@ -43,7 +43,11 @@ baseUrl:string = "https://pedini-honey.herokuapp.com/";
       let endpoints = endpoint+id;
       console.log(this.baseUrl+endpoints);
       return this.http.get(this.baseUrl+endpoints);
-                }        
+                }   
+  //search Something
+  searchSth(endpoint:string){
+    return this.http.get(this.baseUrl+endpoint);
+  }                   
   //getRoute
   getData(endpoint:string){
     return this.http.get(this.baseUrl+endpoint);
