@@ -8,10 +8,11 @@
       
   </div>
   </div>
-
-  <h3 >Found {{total}} results.</h3>
+ 
+ 
 <div class="container">
-    <div class="row">
+    <div class="row"  *ngIf="condition; else elseBlock" >
+      <h3 >Found {{total}} results.</h3>
         <div class="col-md-4"  *ngFor="let data of datas">
             <div class="card border-0 rounded shadow">
                 <img class="card-img-top"  src="./assets/images/honey_bottle_rbg.png" alt="Card image cap">
@@ -26,5 +27,8 @@
         </div>
 
     </div>
-
+    
+    <ng-template #elseBlock>
+      <h1 class="text-center" *ngIf="!condition">Item Not Found</h1>
+    </ng-template>
 </div>

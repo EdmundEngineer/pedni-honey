@@ -9,13 +9,14 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 })
 export class SearchComponent implements OnInit {
 
-  endpoint1: string = "adminProducts/productsSearch/0701376319";
+  endpoint1: string = "adminProducts/productsSearch/";
   endpoint2: string = "";
   endpoint3: string = "";
   endpoint4: string = "";
   specificId:string = "";
   public  datas:any;
   public total = 0;
+  condition:boolean = false;
   postData:any =  {
     "data": {
       "": "",
@@ -67,11 +68,14 @@ export class SearchComponent implements OnInit {
     );
   }
   searchSth(){
-    this.mechanicService.searchSth(this.endpoint1).subscribe(
+    this.mechanicService.searchSth(this.endpoint1+this.currentForm.value.search).subscribe(
       (response: any) => {
         console.log(response);
         this.datas = response;   
-        this.total = response.length;      
+        this.total = response.length;   
+        if(this.total != 0){
+          this.condition = true;
+        }
          
       }
 
@@ -98,6 +102,7 @@ export class SearchComponent implements OnInit {
     );
   }
   onSubmit(){
+    console.log(this.currentForm.value); 
     this.searchSth();
   }
 
