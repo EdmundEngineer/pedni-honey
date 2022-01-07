@@ -1,0 +1,35 @@
+
+<div class="container">
+    <ul class="list-group" *ngIf="condition; else elseBlock">
+             
+      <h3 >Found {{total}} results.</h3>
+        <li class="list-group-item" *ngFor="let data of datas">
+            <div class="row">
+               <div class="col-4">
+                <img class="card-img-top w-100"  src="./assets/images/honey_bottle_rbg.png" alt="Card image cap"> 
+               </div>
+               <div class="col-8">
+                <div class="card-body">
+                  <h6 style="color:#343D21" class=""><b>{{data.data.product_name}}</b> 1KG</h6>
+                  <p class=""><b>KSH 500</b></p>
+                   <div class="input-group mb-3">
+                    Quantity
+                    <input type="number" class="form-control w-50" min="1" value="1" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                 
+                </div>
+               </div>
+               
+
+            </div>
+           
+            </li>
+       
+      </ul>
+   
+    
+    <ng-template #elseBlock>
+      <h3 class="text-center my-auto" *ngIf="!condition">No item in the basket</h3>
+    </ng-template>
+ 
+</div>

@@ -42,6 +42,8 @@ import { SplashComponent } from './splash/splash.component';
 import { LoginComponent } from './login/login.component';
 import { ProductComponent } from './product/product.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BasketComponent } from './basket/basket.component';
+import { HistoryComponent } from './history/history.component';
 
 @NgModule({
   declarations: [
@@ -81,7 +83,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     SpecificOrdersComponent,
     SplashComponent,
     LoginComponent,
-    ProductComponent
+    ProductComponent,
+    BasketComponent,
+    HistoryComponent
   ],
   imports: [
     HttpClientModule,

@@ -14,7 +14,11 @@ import { WhyComponent } from './why/why.component';
 import { WhatComponent } from './what/what.component';
 import { ProductComponent } from './product/product.component';
 import { SearchComponent } from './search/search.component';
+import { BasketComponent } from './basket/basket.component';
+import { HistoryComponent } from './history/history.component';
 const routes: Routes = [
+  {path: 'history', component: HistoryComponent},
+  {path: 'basket', component: BasketComponent},
   {path: 'search', component: SearchComponent},
   {path: 'product', component: ProductComponent},
   {path: 'user-auth', component: UserAuthComponent},
