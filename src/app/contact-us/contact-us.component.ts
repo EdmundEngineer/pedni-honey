@@ -17,7 +17,9 @@ export class ContactUsComponent implements OnInit {
   public  datas:any;
   postData:any =  {
     "data": {
-      "": "",
+      "phone": "",
+      "honey_type": "",
+      "delivery": ""
     }};
   updateData:any =  {
         "service_type": "",
@@ -26,7 +28,10 @@ export class ContactUsComponent implements OnInit {
         "id": ""
       };  
   currentForm =new FormGroup({
-        search: new FormControl('')
+        phone: new FormControl(''),
+        honey_type: new FormControl(''),
+        delivery:new FormControl('')
+
      });        
   constructor(private mechanicService :HttpService,private router :Router,private route: ActivatedRoute) { }
 
@@ -82,7 +87,9 @@ export class ContactUsComponent implements OnInit {
   }
   onSubmit(){
     console.log(this.currentForm.value); 
-    this.postData.data.location = this.currentForm.value.search;
+    this.postData.data.phone = this.currentForm.value.phone;
+    this.postData.data.honey_type = this.currentForm.value.honey_type;
+    this.postData.data.delivery = this.currentForm.value.delivery;
     this.mechanicService.postData(this.endpoint1, this.postData).subscribe(
       (response: any) => {
         console.log(response);
