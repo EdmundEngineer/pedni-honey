@@ -44,6 +44,7 @@ import { ProductComponent } from './product/product.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BasketComponent } from './basket/basket.component';
 import { HistoryComponent } from './history/history.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -85,7 +86,8 @@ import { HistoryComponent } from './history/history.component';
     LoginComponent,
     ProductComponent,
     BasketComponent,
-    HistoryComponent
+    HistoryComponent,
+    CheckoutComponent
   ],
   imports: [
     HttpClientModule,

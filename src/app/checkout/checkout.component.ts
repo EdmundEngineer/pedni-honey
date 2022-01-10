@@ -3,21 +3,26 @@ import { HttpService } from '../http.service';
 import {  FormGroup,FormControl } from '@angular/forms';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 @Component({
-  selector: 'app-contact-us',
-  templateUrl: './contact-us.component.html',
-  styleUrls: ['./contact-us.component.scss']
+  selector: 'app-checkout',
+  templateUrl: './checkout.component.html',
+  styleUrls: ['./checkout.component.scss']
 })
-export class ContactUsComponent implements OnInit {
+export class CheckoutComponent implements OnInit {
 
   endpoint1: string = "customerOrders/orders";
-  endpoint2: string = "";
+  endpoint2: string = "https://quick-garage-api.herokuapp.com/mpesa/lipa-na-mpesa";
   endpoint3: string = "";
   endpoint4: string = "";
   specificId:string = "";
   public  datas:any;
+  public total = 0;
+  condition:boolean = false;
   postData:any =  {
     "data": {
-      "": "",
+      "phone": "",
+      "honey_type":"",
+      "location":"",
+      "status":"0"
     }};
   updateData:any =  {
         "service_type": "",
@@ -27,13 +32,15 @@ export class ContactUsComponent implements OnInit {
       };  
   currentForm =new FormGroup({
         search: new FormControl('')
-     });        
+     });  
+          
   constructor(private mechanicService :HttpService,private router :Router,private route: ActivatedRoute) { }
 
   ngOnInit(): void {
       
    const problem_id :any = this.route.snapshot.paramMap.get('id');
    this.specificId = problem_id;
+   //this.searchSth();
   }
   create(){
     this.mechanicService.postData(this.endpoint1,this.postData).subscribe(
@@ -57,10 +64,27 @@ export class ContactUsComponent implements OnInit {
     this.mechanicService.getSpecificData(this.endpoint1,this.specificId).subscribe(
       (response: any) => {
         console.log(response);
+        
          
       }
 
     );
+  }
+  searchSth(){
+    this.mechanicService.searchSth(this.endpoint1+this.currentForm.value.search).subscribe(
+      (response: any) => {
+        console.log(response);
+        this.datas = response;   
+        this.total = response.length;   
+        if(this.total != 0){
+          this.condition = true;
+        }
+         
+      }
+
+    );
+  
+     
   }
   update(){
     this.mechanicService.updateData(this.endpoint1,this.updateData).subscribe(
@@ -91,4 +115,5 @@ export class ContactUsComponent implements OnInit {
 
     );
   }
+
 }

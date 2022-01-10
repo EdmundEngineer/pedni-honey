@@ -16,7 +16,9 @@ import { ProductComponent } from './product/product.component';
 import { SearchComponent } from './search/search.component';
 import { BasketComponent } from './basket/basket.component';
 import { HistoryComponent } from './history/history.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 const routes: Routes = [
+  {path: 'checkout', component: CheckoutComponent},
   {path: 'history', component: HistoryComponent},
   {path: 'basket', component: BasketComponent},
   {path: 'search', component: SearchComponent},
