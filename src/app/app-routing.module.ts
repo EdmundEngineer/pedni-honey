@@ -36,7 +36,7 @@ const routes: Routes = [
   {path: 'what', component: WhatComponent},
   {path: 'notification', component: NotificationComponent},
   {path: 'profile', component: ProfileComponent},
-  {path: '', redirectTo:'/user-auth', pathMatch:'full'},
+  {path: '', redirectTo:'/home', pathMatch:'full'},
   { path: "**", component: PageNotFoundComponent },
 ];
 
