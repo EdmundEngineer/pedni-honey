@@ -1,0 +1,95 @@
+{
+  "configVersion": 1,
+  "timestamp": 1651163264291,
+  "index": "pedni-honey/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "pedni-honey/favicon.ico",
+        "pedni-honey/index.html",
+        "pedni-honey/main.cb717b7b3b13569f0a73.js",
+        "pedni-honey/manifest.webmanifest",
+        "pedni-honey/polyfills.75fc7f91b4e736131ca4.js",
+        "pedni-honey/runtime.dc7e9be1beb045a07eaa.js",
+        "pedni-honey/styles.37aaf109b0ec1cb579d3.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "pedni-honey/assets/icons/icon-128x128.png",
+        "pedni-honey/assets/icons/icon-144x144.png",
+        "pedni-honey/assets/icons/icon-152x152.png",
+        "pedni-honey/assets/icons/icon-192x192.png",
+        "pedni-honey/assets/icons/icon-384x384.png",
+        "pedni-honey/assets/icons/icon-512x512.png",
+        "pedni-honey/assets/icons/icon-72x72.png",
+        "pedni-honey/assets/icons/icon-96x96.png",
+        "pedni-honey/assets/images/cta.png",
+        "pedni-honey/assets/images/honey_bottle.jpg",
+        "pedni-honey/assets/images/honey_bottle_2.jpg",
+        "pedni-honey/assets/images/honey_bottle_rbg.png",
+        "pedni-honey/assets/images/pexels-abdulrhman-alkady-3772492.jpg",
+        "pedni-honey/assets/images/pexels-mareefe-1638280.jpg",
+        "pedni-honey/assets/images/pexels-valeria-boltneva-1872904.jpg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "pedni-honey/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "pedni-honey/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "pedni-honey/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "pedni-honey/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "pedni-honey/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "pedni-honey/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "pedni-honey/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "pedni-honey/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "pedni-honey/assets/images/cta.png": "48e6b0a89e49ec04b013fd5b11343490fd6a1774",
+    "pedni-honey/assets/images/honey_bottle.jpg": "41d73faf1304023d816a780ffb1e6423f0abdd50",
+    "pedni-honey/assets/images/honey_bottle_2.jpg": "40b979e735666e8b28b5661b973aa61e0bd9df51",
+    "pedni-honey/assets/images/honey_bottle_rbg.png": "b683d4237107bc6e0f9407b89d201f2d4747c7c7",
+    "pedni-honey/assets/images/pexels-abdulrhman-alkady-3772492.jpg": "f3229b0f161b066a91ddf2229c430e3a1b5f3ee7",
+    "pedni-honey/assets/images/pexels-mareefe-1638280.jpg": "1c1fb4f56489c6842f413d9f88c3e308f86f62b1",
+    "pedni-honey/assets/images/pexels-valeria-boltneva-1872904.jpg": "a6d39ad6f82652ee9a3bffe1bf828b74c885d362",
+    "pedni-honey/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "pedni-honey/index.html": "f852c1d113cbd43981c95e55b8456d72f7a49e7c",
+    "pedni-honey/main.cb717b7b3b13569f0a73.js": "f2eeb61ee735f2642501ed668a7c97a9dca99006",
+    "pedni-honey/manifest.webmanifest": "dbee2c8e9d774a25a0d14ab77dacce9bdce89662",
+    "pedni-honey/polyfills.75fc7f91b4e736131ca4.js": "173416b1458aac9e4d26bc58a1718063f7ee1f06",
+    "pedni-honey/runtime.dc7e9be1beb045a07eaa.js": "13b6848f68749637bd897ab22411db41a8578e19",
+    "pedni-honey/styles.37aaf109b0ec1cb579d3.css": "a1c0ad11ec7913aaca425e8e661d2a1e3f451fd8"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
